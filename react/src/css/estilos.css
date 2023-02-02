@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body::-webkit-scrollbar{
+    width: 7px;
+}
+
+.body::-webkit-scrollbar-thumb{
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+.navbar > .container-fluid > .navbar-brand {
+    font-family: 'Mr Dafoe', cursive;
+}
+
+.neon{
+    font-family: 'Mr Dafoe', cursive;
+    font-weight: 200;
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+    margin: 50px;
+    font-size: 150px;
+    text-align: center;
+}
+/* 
+div{
+    display: flex;
+    justify-content: center;
+} */
+
+.titulo{
+    font-family: 'Mr Dafoe', cursive;
+    color: #ffde1d;
+    text-align: center;
+    font-size: 82px;
+}
+
+.sinop,
+.detail > p{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+.detail > h2{
+    font-family: 'Mulish', sans-serif;
+}
+
+.lanz,
+.direc{
+    border-bottom: #ffde1d 1px solid;
+}
+
+#genero{
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 40px;
+    color: #ff1b1b;
+}
+
+.btn{
+    font-family: 'Mulish', sans-serif;
+}
+
+.detail > ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.punto{
+    color: #ffde1d;
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 42px;
+}
+
+.detail > ul > li {
+    font-family: 'Poppins', sans-serif;
+}
+
+.detail > p{
+    font-size: 18px;
+}
+
+.encabezado {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.encabezado > a {
+    margin-top: 5%;
+    color: #be2728;
+    font-size: 44px;
+}
+
+.encabezado > a:hover{
+    color: #751717;
+}
+
+.nav-link{
+    color: #ffde1d;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
+.nav-item{
+    color:#ffffff;
+}
+    .nav-item{
+    background-image: linear-gradient(
+      to right,
+      #ffde1d,
+      #ffde1d 50%,
+      rgb(255, 255, 255) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    }
+
+    .nav-item:before{
+    content: '';
+    background: #ffde1d;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+    }
+
+    .nav-item:hover {
+    background-position: 0;
+    }
+
+.nav-item:hover::before{
+    width: 100%;
+}
+
+
+.nav-link:hover,
+.nav-link:active {
+    color: rgb(195, 166, 0);
+}
+
+.films > ul{
+    list-style: none;
+}
+
+.films > ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qs > h2{
+    font-family: 'Mr Dafoe', cursive;
+    color: #ffde1d;
+    font-size: 52px;
+}
+
+.qs > p,
+.qs > q{
+    font-family: 'Mulish', sans-serif;
+    color: white;
+    padding-left: 120px;
+    padding-right: 130px;
+}
+
+.qs {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 30px;
+}
+
+.qs > h2 > span {
+    font-size: 190px;
+    margin-left: 40px;
+}
+
+.movie{
+    display: flex;
+}
+
+.filmName{
+    font-family: 'Mr Dafoe', cursive;
+    color: #ffde1d;
+    font-size: 82px;
+
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    margin-left: 54px;
+    color: #fff;
+}
+
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 1px #fff,
+        0 0 9px #fff,
+        0 0 15px #fff,
+        0 0 40px rgb(255, 0, 0),
+        0 0 80px rgb(255, 0, 0),
+        0 0 90px #ff0000,
+        0 0 100px rgb(255, 0, 0),
+        0 0 150px rgb(255, 0, 21);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+.body{
+    background-color: rgb(15, 14, 14);
+    color: white;
+}
+
+/* FORMULARIOS */
+.regis{
+    width: 50%;
+}
+
+.inpu {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px yellow;
+    color: white;
+}
+
+.novedad > .inpu {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px yellow;
+    color: white;
+}
+
+.novedad > .inpu:active{
+    background-color: transparent;
+}
+
+
+.select{
+    color: #7c7c5c;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px yellow;
+}
+
+
+
+.option {
+    background-color: black;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.optionDisabled {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.novedadTitle,
+.regisTitle{
+    font-family: 'Mr Dafoe', cursive;
+    color: #ffde1d;
+    font-size: 74px;
+}
+
+.editarTitle{
+    font-family: 'Mulish', sans-serif;
+    color: #ffde1d;
+    font-size: 84px;
+    
+}
+
+.regis > label,
+.novedad > label{
+    font-family: 'Poppins', sans-serif;
+}
+
+.novedad > .label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px
+}
+
+.regis > .btn,
+.novedad > .btn,
+.btn {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+}
+
+.novedad > textarea,
+.novedad > #textarea {
+    resize: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.modalTtile{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+
+.modal-dialog > .modal-content{
+
+    background: rgba(136, 122, 122, 0.53);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#root{
+    background-color: rgb(15, 14, 14);
+    color: white;
+}
